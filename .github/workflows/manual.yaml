@@ -1,0 +1,21 @@
+name: manual CI
+
+on:
+  workflow-dispatch:
+    inputs:
+      enviromments:
+        description: "choose"
+        required: true
+        type: choice
+        options:
+          - prod
+          - dev
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      - name: print message on the terminal
+        run: echo "running the task on ${{inputs.enviromments}}"
