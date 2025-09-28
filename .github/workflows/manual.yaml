@@ -1,7 +1,7 @@
 name: manual CI
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     inputs:
       enviromments:
         description: "choose"
