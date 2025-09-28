@@ -2,7 +2,7 @@ name: cron CI
 
 on:
   schedule:
-    - cron: "50 16 * * *"
+    - cron: "00 16 * * *"
 
 jobs:
   test:
