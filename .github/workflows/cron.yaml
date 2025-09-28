@@ -1,0 +1,13 @@
+name: cron CI
+
+on:
+  schedule:
+    - cron: "50 16 * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      - name: print message on the terminal
+        run: echo "running the task"
