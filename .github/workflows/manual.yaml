@@ -11,11 +11,10 @@ on:
           - prod
           - dev
 
-
 jobs:
   test:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+    runs-on: ubuntu-latest
 
     steps:
       - name: print message on the terminal
-        run: echo "running the task on ${{inputs.enviromments}}"
+        run: echo "running the task on ${{ inputs.enviromments }}"
